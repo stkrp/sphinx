@@ -61,7 +61,7 @@ class DummyApplication:
         self.registry = SphinxComponentRegistry()
         self.messagelog: List[str] = []
         self.srcdir = "/"
-        # FIXME: ?
+        # FIXME: By default they are the same, but what if they are different?
         self.confdir = self.srcdir
         self.translator = translator
         self.verbosity = 0
