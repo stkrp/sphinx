@@ -127,7 +127,7 @@ class AutosummaryRenderer:
                           RemovedInSphinx50Warning, stacklevel=2)
 
         system_templates_path = [os.path.join(package_dir, 'ext', 'autosummary', 'templates')]
-        loader = SphinxTemplateLoader(app.srcdir, app.config.templates_path,
+        loader = SphinxTemplateLoader(app.confdir, app.config.templates_path,
                                       system_templates_path)
 
         self.env = SandboxedEnvironment(loader=loader)
