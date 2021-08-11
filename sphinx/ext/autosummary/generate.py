@@ -61,6 +61,8 @@ class DummyApplication:
         self.registry = SphinxComponentRegistry()
         self.messagelog: List[str] = []
         self.srcdir = "/"
+        # FIXME: ?
+        self.confdir = self.srcdir
         self.translator = translator
         self.verbosity = 0
         self._warncount = 0
